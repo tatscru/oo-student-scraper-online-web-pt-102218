@@ -3,6 +3,8 @@ require_relative "../lib/student.rb"
 require 'nokogiri'
 require 'colorize'
 
+# generates students using both classes 
+
 class CommandLineInterface
   BASE_PATH = "./fixtures/student-site/"
 
@@ -10,6 +12,8 @@ class CommandLineInterface
     make_students
     add_attributes_to_students
     display_students
+    
+    #runs all three of the below methods 
   end
 
   def make_students
